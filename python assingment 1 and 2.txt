@@ -1,0 +1,112 @@
+Q4> palindrom:
+
+
+def test(n):
+    return [i for i in range(0,n,2) if str(i) == str(i)[::-1]] 
+n = 50
+print("\nEven palindromes up to",n,"-")
+print(test(n))
+n = 100
+print("\nEven palindromes up to",n,"-")
+print(test(n))
+n = 500
+print("\nEven palindromes up to",n,"-")
+print(test(n))
+n = 2000
+print("\nEven palindromes up to",n,"-")
+print(test(n))
+
+Q7> Write a python program to enter the X & Y co-ordinates of two points P1(X1, Y1), P2(X2, Y2). Find the 
+distance between these two points.
+
+
+import math
+p1 = [4, 0]
+p2 = [6, 6]
+distance = math.sqrt( ((p1[0]-p2[0])**2)+((p1[1]-p2[1])**2) )
+
+print(distance)
+
+
+Q9>Write a python program to convert decimal number to other number system (binary, octal and 
+hexadecimal)
+
+
+dec = int(input("Enter an integer: "))
+print("The decimal value of",dec,"is:")
+print(bin(dec),"in binary.")
+print(oct(dec),"in octal.")
+print(hex(dec),"in hexadecimal.")
+
+Q11. Write a python program to search an element in an array/list in python
+
+mylist = []
+print("Enter 5 elements for the list: ")
+for i in range(5):
+    val = int(input())
+    mylist.append(val)
+
+print("Enter an element to be search: ")
+elem = int(input())
+
+for i in range(5):
+    if elem == mylist[i]:
+        print("\nElement found at Index:", i)
+        print("Element found at Position:", i+1)
+
+Q12. Write a python program to count the total numbers of digits in a number inputted by user
+
+num = 3452
+count = 0
+
+while num != 0:
+    num //= 10
+    count += 1
+
+print("Number of digits: " + str(count))
+
+Q13. Write a python program to input a list of numbers and remove the duplicate entry from the list.
+
+def Remove(duplicate):
+    final_list = []
+    for num in duplicate:
+        if num not in final_list:
+            final_list.append(num)
+    return final_list
+     
+# Driver Code
+duplicate = [2, 4, 10, 20, 5, 2, 20, 4]
+print(Remove(duplicate))
+
+
+Q14. Write a program to check the validity of username and password input by users for a website. Below 
+are the criteria for checking both username and password:
+
+
+
+import re
+p= input("Input your password")
+x = True
+while x:  
+    if (len(p)<6 or len(p)>12):
+        break
+    elif not re.search("[a-z]",p):
+        break
+    elif not re.search("[0-9]",p):
+        break
+    elif not re.search("[A-Z]",p):
+        break
+    elif not re.search("[$#@]",p):
+        break
+    elif re.search("\s",p):
+        break
+    else:
+        print("Valid Password")
+        x=False
+        break
+
+if x:
+    print("Not a Valid Password")
+
+
+

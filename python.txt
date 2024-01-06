@@ -1,0 +1,89 @@
+# 1. WAP to convert temperature in degree Celsius to Fahrenheit.
+# temp = float(input("enter the temperature in celsius"))
+# farenheit = temp*1.8+32
+# print(farenheit).
+
+# 2. WAP to input principal amount, rate of interest and time then calculate simple interest and cumulative interest.
+# principal = float(input("enter the principal"))
+# rate = float(input("enter the rate of interest"))
+# time = float(input("enter the time"))
+# si = principal*rate*time/100
+# ci = principal+si
+# print(si)
+# print(ci)
+
+# 3. WAP to input principal amount, interest and time then calculate rate of interest.
+# princi=int(input("ENTER THE PRINCIPLE"))
+# time= float(input("ENTER THE TIME "))
+# si=int(input("ENTER THE SIMPLE INTEREST "))
+# rate=(si*100)/(princi*time)
+# print("RATE OF INTERST IS :",rate)
+
+
+# 4. WAP to input principal amount, rate of interest and interest then calculate time.
+# princi=int(input("ENTER THE PRINCIPLE"))
+# time= float(input("ENTER THE TIME "))
+# si=int(input("ENTER THE SIMPLE INTEREST "))
+# rate=(si*100)/(princi*time)
+# print("RATE OF INTERST IS :",rate)
+
+# 5. A) WAP to swap numeric values of two variables
+# 	i) With using third variable
+# a=int(input("ENTER THE FIRST NUMBER "))
+# b=int(input("ENTER THE 2ND NUMBER "))
+# c=0
+# c=a
+# a=b
+# b=c
+# print("a :",a,"\n b :",b)
+
+# 	ii) Without using third variable
+# a=int(input("ENTER THE FIRST NUMBER "))
+# b=int(input("ENTER THE 2ND NUMBER "))
+# a=a+b
+# b=a-b
+# a=a-b
+# print("a:",a,"\nb:",b)
+
+# 6. WAP to calculate the area of triangle, rectangle, circle, sphere
+# area of rectangle
+# length = float(input("enter the length"))
+# breath = float(input("enter the breath"))
+# area = length*breath
+# print(area)
+
+# area of triangle
+# length = float(input("enter the length"))
+# breath = float(input("enter the breath"))
+# area = 0.5*breath*length
+# print(area)
+
+# area of circle
+# radius = float(input("enter the radius"))
+# area = 3.14*radius*radius
+# print(area)
+
+# area of sphere
+# radius = float(input("enter the radius"))
+# area = 4*3.14*radius*radius
+# print(area)
+
+# 7 Paragraph="The quick brown fox jumps over the lazy dog."
+sub_string=paragraph [4:9]
+print(sub_string)
+
+# 8. WAP to enter your name and print after deleting first and last characters of the name.
+# name = "Anurag Pandey"
+# print(name[1:-1])
+
+# 9. WAP to calculate the following equation by inputting the value of x, y and n in the range [2 to 8].
+# x = float(input("enter the number x"))
+# y = float(input("enter the number y"))
+# n = float(input("enter the number n"))
+# eq = ((x*2+x3)/(y/4+y/3+y8))**(2*n)*(y6+y2/x*9)
+# print(eq)
+
+# 10. WAP to enter your name in lower case and convert it into upper case and vice versa.
+# name="Tushar Mallick"
+# print(name.lower())
+# print(name.upper())
