@@ -1,2 +1,2 @@
 import numpy as np
-print(np._version)
+print(np.__version__)
